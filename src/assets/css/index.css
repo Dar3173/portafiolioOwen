@@ -39,8 +39,13 @@ video {
     height: 10%;
     align-items: center;
     display: flex;
-    justify-content: flex-end;
-    padding: 3rem 2rem 0 2rem;
+    justify-content: space-between;
+    padding: 10px 2px 0 2px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
 }
 
 .menu__lista{
@@ -79,7 +84,7 @@ video {
     flex-direction: column;
     text-align: center;
     color: var(--blanco);
-    height: 90vh;
+    height: 80vh;
 }
 
 .texto_central{
@@ -117,5 +122,6 @@ video {
 .texto_link:hover{
     text-decoration: underline;
     font-size: 30px;
+    color: var(--naranja);
     transition: 0.5s;
 }
