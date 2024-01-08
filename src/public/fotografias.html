@@ -2,14 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-with">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owen Orjuela</title>
     <link rel="icon" type="image/png" href="../assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/videos.css" />
+    <link rel="stylesheet" href="../assets/css/fotografia.css" />
 </head>
 <body>
     <header class="container_menu">
@@ -24,9 +25,49 @@
             </div>
     </header>
     <main>
-        <div class="container">
-        </div>
+        <section class="informacion_fotos">
+            <div class="texto_fotos">
+                <h1 class="titulo_fotos">Fotografía</h1>
+                <p class="parrafo_fotos">Mi proceso fotográfico se caracteriza por una aproximación intuitiva y creativa. Al embarcarme en sesiones fotográficas, adopto una mentalidad abierta y receptiva, explorando diversas composiciones y ángulos con el fin de capturar momentos auténticos y significativos. No sigo una directriz específica, sino que me sumerjo en la experiencia, permitiendo que la espontaneidad y la experimentación jueguen un papel crucial en mi proceso.</p>
+            </div>
+            <div class="container_imagen_foto">
+                <img src="../assets/img/fotografia.png" alt="icono multimedia">
+            </div>
+        </section>
+        <section class="container_fotos">
+            <div class="column">
+                <img src="../assets/img/fotos/1.jpg" alt="" class="imagen">
+                <img src="../assets/img/fotos/4.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/7.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/13.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/16.jpg" alt="" class="imagen">
+            </div>
+
+            <div class="column">
+                <img src="../assets/img/fotos/2.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/8.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/14.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/5.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/11.png" alt="" class="imagen">
+            </div>
+
+            <div class="column">
+                <img src="../assets/img/fotos/3.jpg" alt="" class="imagen">
+                <img src="../assets/img/fotos/12.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/6.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/9.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/15.jpg" alt="" class="imagen">
+            </div>
+
+            <div class="modal" id="modal">
+                <span class="cerrar" id="cerrar">&times;</span>
+                <img class="modal-contenido" id="imagen-ampliada">
+                <button id="anterior">&#60;</button>
+                <button id="siguiente">&#62;</button>
+            </div>
+        
+            <script src="../assets/js/script.js"></script>
+        </section>
     </main>
-    <video muted autoplay loop> <source src="../assets/videos/ruido.mp4" type="video/mp4"> </video>
 </body>
 </html>

@@ -15,8 +15,10 @@ body, html{
     width: 100%;
     height: 100%;
     margin: 0;
-    background: var(--naranja);
+    background: var(--negro-gris) url(../img/pattern_video.png);
 }
+
+/*estilos menu*/
 
 .container_menu{
     position: relative;
@@ -33,6 +35,7 @@ body, html{
 .logo{
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
 
 .menu__lista{
@@ -59,48 +62,51 @@ body, html{
     transition: 0.5s;
 }
 
-
 .container_videos{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.container_informacion_videos{
+/*estilos texto central*/
+
+.container_informacion{
     display: flex;
     justify-content: space-around;
-    padding: 40px;
+    padding: 10px 5px 40px 5px;
 }
 
-.texto_videos{
+.texto{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     white-space: pre-line;
-    width: 700px;
+    width: 50%;
+    margin-left: 40px;
 }
 
-.titulo_videos{
+.titulo{
     font-family: var(--titulos);
     font-size: 45px;
     color: var(--blanco);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.parrafo_videos{
+.parrafo{
     font-family: var(--parrafos);
     color: var(--blanco);
-    margin-bottom: 13px;
+    font-size: 15px;
+    margin-bottom: 30px;
     text-align: justify;
     line-height: 1.2;
 }
 
 .btn_videos{
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
     border: none;
-    background-color: var(--gris-oscuro);
+    background-color: var(--naranja);
     cursor: pointer;
 }
 
@@ -119,26 +125,107 @@ body, html{
     font-size: 25px;
 }
 
-.contenedor_video{
-    position: fixed;
-    bottom: 0;
+.video_principal{
+    width: 560px;
+    height: 300px;
+    box-shadow: 0 2px 5px 2px #000000;
 }
+
+/*estilos videos*/
 
 .videos_contenido{
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-color: var(--blanco);
     display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .videos{
-    padding: 10px;
-    display: flex;
-    flex: 1;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    box-shadow: 0 5px 50px 10px #000000;
 }
 
 .videos_cortos{
-    width: 500px;
-    padding: 20px 5px;
+    width: 480px;
+    height: 250px;
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px 2px #000000;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .container_menu {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu__link {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .container_informacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+
+    .texto{
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .video_principal{
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .parrafo {
+        font-size: 12px;
+    }
+
+    .btn_videos {
+        padding: 6px 16px;
+        margin-bottom: 10px;
+    }
+
+    .link_btn {
+        font-size: 20px;
+    }
+
+    .videos{
+        grid-template-columns: 1fr;
+        margin: 5px;
+    }
+
+    .videos_cortos {
+        width: 100%;
+        padding: 0;
+    }
 }

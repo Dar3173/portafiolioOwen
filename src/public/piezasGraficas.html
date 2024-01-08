@@ -2,14 +2,17 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-with">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owen Orjuela</title>
     <link rel="icon" type="image/png" href="../assets/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
+    <link rel="stylesheet" href="../assets/css/videos.css" />
+    <link rel="stylesheet" href="../assets/css/fotografia.css" />
+    <link rel="stylesheet" href="../assets/css/piezas.css" />
+
 </head>
 <body>
     <header class="container_menu">
@@ -24,9 +27,46 @@
             </div>
     </header>
     <main>
-        <div class="container">
-        </div>
+        <section class="informacion_pieza">
+            <div class="texto_pieza">
+                <h1 class="titulo">Piezas gráficas</h1>
+                <p class="parrafo">Aunque mi enfoque principal no se centra en el diseño gráfico, he tenido la oportunidad de incursionar en la creación de piezas gráficas destinadas a redes sociales, abarcando diversos formatos. En este contexto, he desarrollado vectores empleando conceptos fundamentales del diseño, tales como la reticulación, la forma, el color y el trazo, utilizando herramientas como Photoshop e Illustrator. Además, como parte de mi interés personal, dedico tiempo a la realización de ilustraciones como pasatiempo. Estas obras representan una manifestación de mi creatividad y habilidades, exhibiendo una diversidad de estilos, técnicas y conceptos que exploran mi expresión artística.</p>
+            </div>
+        </section>
+        <section class="container_fotos">
+            <div class="column">
+                <img src="../assets/img/fotos/1.jpg" alt="" class="imagen">
+                <img src="../assets/img/fotos/4.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/7.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/13.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/16.jpg" alt="" class="imagen">
+            </div>
+
+            <div class="column">
+                <img src="../assets/img/fotos/2.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/8.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/14.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/5.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/11.png" alt="" class="imagen">
+            </div>
+
+            <div class="column">
+                <img src="../assets/img/fotos/3.jpg" alt="" class="imagen">
+                <img src="../assets/img/fotos/12.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/6.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/9.png" alt="" class="imagen">
+                <img src="../assets/img/fotos/15.jpg" alt="" class="imagen">
+            </div>
+
+            <div class="modal" id="modal">
+                <span class="cerrar" id="cerrar">&times;</span>
+                <img class="modal-contenido" id="imagen-ampliada">
+                <button id="anterior">&#60;</button>
+                <button id="siguiente">&#62;</button>
+            </div>
+        
+            <script src="../assets/js/script.js"></script>
+        </section>
     </main>
-    <video muted autoplay loop> <source src="../assets/videos/ruido.mp4" type="video/mp4"> </video>
 </body>
 </html>

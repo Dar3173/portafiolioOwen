@@ -55,3 +55,31 @@
     width: 850px;
     bottom: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .menu_productos {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .item_productos {
+        margin: 20px  0  0  10px ;
+    }
+
+    .link_productos {
+        font-size: 30px;
+    }
+
+    .container_imagen {
+        display: none;
+    }
+
+    .img_producto {
+        width: 100%;
+        height: auto;
+    }
+
+    .backgraund_video {
+        opacity: 0.5;
+    }
+}

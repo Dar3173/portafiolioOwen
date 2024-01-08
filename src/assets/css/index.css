@@ -1,5 +1,4 @@
-
-:root{
+:root {
     --blanco: #FFFCF2;
     --gris-claro: #CCC5B9;
     --gris-oscuro: #403D39;
@@ -11,12 +10,10 @@
     --titulo2: 'Bebas Neue', sans-serif;
 }
 
-body, html{
+body, html {
     width: 100%;
     height: 100%;
     margin: 0;
-    min-height: 100vh;
-    position: relative;
     background: var(--negro-gris);
 }
 
@@ -30,12 +27,12 @@ video {
     opacity: 0.2;
 }
 
-.container_menu{
+.container_menu {
     position: relative;
     z-index: 2;
 }
 
-.menu{
+.menu {
     height: 10%;
     align-items: center;
     display: flex;
@@ -43,20 +40,21 @@ video {
     padding: 10px 2px 0 2px;
 }
 
-.logo{
+.logo {
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
 
-.menu__lista{
+.menu__lista {
     display: flex;
 }
 
-.menu__item{
+.menu__item {
     list-style: none;
 }
 
-.menu__link{
+.menu__link {
     color: var(--blanco);
     margin-right: 1.5rem;
     text-decoration: none;
@@ -65,19 +63,19 @@ video {
     font-family: var(--parrafos);
 }
 
-.menu__link:hover{
+.menu__link:hover {
     text-decoration: none;
     color: var(--naranja);
     font-size: 22px;
     transition: 0.5s;
 }
 
-.container{
+.container {
     position: relative;
     z-index: 2;
 }
 
-.container_texto{
+.container_texto {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +85,7 @@ video {
     height: 80vh;
 }
 
-.texto_central{
+.texto_central {
     font-family: var(--titulos);
     font-size: 50px;
     white-space: pre-line;
@@ -98,20 +96,20 @@ video {
     font-weight: bold;
 }
 
-.texto_central_parrafo{
+.texto_central_parrafo {
     font-family: var(--parrafos);
     font-size: 25px;
 }
 
-.container_link{
+.container_link {
     margin-top: 45px;
 }
 
-.texto-item{
+.texto-item {
     list-style: none;
 }
 
-.texto_link{
+.texto_link {
     color: var(--blanco);
     text-decoration: none;
     font-weight: bold;
@@ -119,9 +117,50 @@ video {
     font-family: var(--parrafos);
 }
 
-.texto_link:hover{
+.texto_link:hover {
     text-decoration: underline;
     font-size: 30px;
     color: var(--naranja);
     transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    video {
+        width: 100%; /* Cambiado de 150% a 100% */
+        height: 100%; /* Cambiado de 150% a 100% */
+    }
+
+    .container_menu {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu__link {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .texto_central {
+        font-size: 25px;
+    }
+
+    .texto_central_parrafo {
+        font-size: 15px;
+    }
+
+    .texto_link {
+        font-size: 15px;
+    }
 }
