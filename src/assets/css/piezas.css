@@ -12,3 +12,15 @@
     white-space: pre-line;
     margin: 30px;
 }
+
+.container_piezas{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .texto_pieza{
+        margin:10px
+    }
+}

@@ -29,7 +29,7 @@ video {
 
 .container_menu {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu {

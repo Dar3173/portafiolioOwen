@@ -13,7 +13,7 @@
     top: 50%;
     transform: translateY(-50%);
     padding-left: 100px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .container_items {
@@ -53,7 +53,6 @@
 
 .img_producto{
     width: 850px;
-    bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,5 +80,13 @@
 
     .backgraund_video {
         opacity: 0.5;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container_imagen{
+        display: block;
+        width: 100%;
+        opacity: 0.2; 
     }
 }
