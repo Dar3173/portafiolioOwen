@@ -9,86 +9,229 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/videos.css" />
+    <link rel="stylesheet" href="css/video-diseño.css">
 </head>
 <body>
-    <header class="container_menu">
-        <div class="menu">
-            <a href="./index.html" title="inicio"><img class="logo" src="assets/img/logo_black.png" alt="logo Internships4u" ></a>
-                <nav>
-                    <ul class="menu__lista">
-                        <li class="menu__item"><a class="menu__link" href="./proyectos.html">Proyectos</a></li>
-                        <li class="menu__item">&nbsp;</li>
-<li class="menu__item"><a class="menu__link" href="./sobreMi.html">Sobre mí</a></li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
-    <main>
-        <div class="container_videos">
-            <section class="container_informacion">
-                <div class="texto">
-                    <h1 class="titulo">Videos</h1>
-                    <p class="parrafo">Cada video es una pieza única y mi objetivo es comunicar un mensaje claro y efectivo. Comienzo con una fase de preproducción, desarrollando la idea y planificando su ejecución. Durante la producción, uso cámaras réflex como la Nikon D5300 y la Canon T7i. En la postproducción, añado valor narrativo al material utilizando programas especializados como Premiere, After Effects, DaVinci Resolve, Photoshop y Audition, para obtener un producto final de alta calidad.</p>
+    <aside class="background--banner">
+        <video muted autoplay loop poster="Multimedia/background-image.webp">
+            <source src="assets/video-01.mp4" type="video/mp4">
+            <img src="Multimedia/background-image.webp" alt="Imagen background">
+        </video>
+        <div class="banner">
+            <div class="container_menu">
+                <div class="menu">
+                    <a href="index.html">
+                        <img class="logo" src="assets/img/logo.png" alt="logo owen">
+                    </a>
+                    <nav>
+                        <ul class="menu__lista">
+                            <li class="menu__item"><a class="menu__link" href="sobreMi.html">Sobre mí</a></li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#">Menu &#9776;</a>
+                                <ul class="sub_menu">
+                                    <li class="submenu__item"><a class="submenu__link" href="videos.html">Videos</a></li>
+                                    <li class="submenu__item"><a class="submenu__link" href="fotografias.html">Fotografías</a></li>
+                                    <li class="submenu__item"><a class="submenu__link" href="piezasGraficas.html">Piezas gráficas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-			  	<div class="container_iconos">
-					<div class="iconos_cuadro">
-						<img src="assets/img/iconos/premiere.png" alt="icono del logo de Adobe Premiere" width="50">
-						<p>Premiere</p>
-					</div>
-					<div class="iconos_cuadro">
-						<img src="assets/img/iconos/audition.png" alt="icono del logo de Adobe Audition" width="50">
-						<p>Audition</p>
-					</div>
-					<div class="iconos_cuadro">
-						<img src="assets/img/iconos/da vinci.png" alt="icono del logo de DaVinci Resolve" width="50">
-						<p>DaVinci Resolve</p>
-				  </div>
-				  <div class="iconos_cuadro">
-						<img src="assets/img/iconos/after.png" alt="icono del logo de Adobe After Effects" width="50">
-						<p>After Effects</p>
-					</div>
-					<div class="iconos_cuadro">
-						<img src="assets/img/iconos/photoshop.png" alt="icono del logo de Adobe After Effects" width="50">
-						<p>Photoshop</p>
+            </div>
+
+            <div class="imagotipo">
+                <div class="text--informativo">
+                    <h1>Videos</h1>
+                    <p>Cada video es único, y mi objetivo es comunicar un mensaje claro y efectivo. Trabajo desde la preproducción hasta la postproducción, utilizando cámaras réflex como la Nikon D5300 y Canon T7i, y programas como Premiere, After Effects, DaVinci Resolve, Photoshop y Audition, para entregar un producto final de alta calidad.</p>
+                    <button>⏵Proyecto OwenIOG</button>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="peliculas-recomendadas contenedor">
+			<div class="contenedor-titulo-controles">
+				<h3>Gano Excel</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda">&#60;</button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/WaMtCG2H6js?si=Y4TaKdFKV88h7TDq">
+                                <img src="assets/img/caratulas/luvoco.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/5QSLfF-qnZ8?si=BYea9fPUE6Jx3bi">
+                                <img src="assets/img/caratulas/ganosoap.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/TKYDn5FUMvQ?si=vAAILAQnZI5tE3_N">
+                                <img src="assets/img/caratulas/5 datos curiosos de malasia.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/3zP2Tyw71IE?si=JH3djtz3DQEfux1M">
+                                <img src="assets/img/caratulas/honduras inauguracion.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/tXNLSCrYbJk?si=omGQzqi4j-Emx3nT">
+                                <img src="assets/img/caratulas/luvoco 3.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/8F2E8gdTrNg?si=RRzGHxg9idzMQixe">
+                                <img src="assets/img/caratulas/reel intro malasia.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/vWTHAG7GunU?si=4mcxmhmpvSznqHu-">
+                                <img src="assets/img/caratulas/reel dia de la hembra.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/uZvSsIKYYfQ?si=pPkPhdRSzDRRf9o_">
+                                <img src="assets/img/caratulas/promo productos 3.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/wVI6MywijMY?si=9u1YCXfkoso-aFfp">
+                                <img src="assets/img/caratulas/luvoco 1.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/SHV00sUy7a8?si=PbbTrJWF_QPX472o">
+                                <img src="assets/img/caratulas/luvoco 2.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/iuu-O1BEtXQ?si=w9IvGAytWZhio_Rd">
+                                <img src="assets/img/caratulas/reel ganoderma.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/11XtoChl5OU?si=xZHDFM_-tYpi4uHS">
+                                <img src="assets/img/caratulas/promo productos 1.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/9uNjaYR3qqY?si=kcMZJ8ZWV_6VPtRL">
+                                <img src="assets/img/caratulas/promo productos 2.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/hKLvBhTPnHY?si=d_FAV0eoUUvrsYkB">
+                                <img src="assets/img/caratulas/promo colageno.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/Pi0c3ukZkjY?si=B32OYeb7btZzSgde">
+                                <img src="assets/img/caratulas/cumbre lideres.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/1ueV2xESm2w?si=pRyDBu_hwH1YId5c">
+                                <img src="assets/img/caratulas/web.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/HPOsS2TB8r8?si=ojBs8Fv0RusFKxBS">
+                                <img src="assets/img/caratulas/super sabado bogota junio.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/Dajp2lcZww4?si=_XPcP4hPVaaqy4V5">
+                                <img src="assets/img/caratulas/super sabado bogota 27 abril.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/_V0AaAm8Dm0?si=HRb_BCYtAqQNnOl6">
+                                <img src="assets/img/caratulas/super sabado villavicencio.jpg" alt=""></a>
+						</div>
 					</div>
 				</div>
-            </section>
-                <section class="videos_contenido">
-             		<div class="bannervideos">
-					  <img src="assets/img/project.jpg" alt="" class="banner">
-						<a href="https://youtube.com/playlist?list=PLFVFNiPnctTJik6YfM4Wm5GNd9M-Kj4I9&si=ZdG2s92dDHgCBdQv" target="_blank">
-							<div class="overlay">
-								<span class="text">Proyectos personales</span>
-							</div>
-						</a>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">&#62;</button>
+			</div>
+
+            <div class="contenedor-titulo-controles">
+				<h3>Cun Media</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda">&#60;</button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/A-lReolLGvo?si=EQArJcH9r6DldV1-">
+                                <img src="assets/img/caratulas/marketing.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/obJkgVK65Ks?si=O88nmTCYYcOEFR-I">
+                                <img src="assets/img/caratulas/deporte.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/t8nqDmz6xAY?si=ac-EHCZtYp2JQTnc">
+                                <img src="assets/img/caratulas/diseño.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/dGE2Zq5KTJg?si=mAoRouMEK82HOiLu">
+                                <img src="assets/img/caratulas/convocatoria radio.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/gjEpjbK-pWE?si=KXIg0p0L9MH2Gw-S">
+                                <img src="assets/img/caratulas/opener zona cunmedia.jpg" alt=""></a>
+						</div>
 					</div>
-             		<div class="bannervideos">
-						<img src="assets/img/books.jpg" alt="" class="banner">
-						<a href="https://youtube.com/playlist?list=PLFVFNiPnctTKhVOxo03cxAqN8J1PuekHS&si=WQ7-i8ewdK4J8Ca5" target="_blank">
-							<div class="overlay">
-								<span class="text">Cun digital</span>
-							</div>
-					  </a>					
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">&#62;</button>
+			</div>
+
+
+            <div class="contenedor-titulo-controles">
+				<h3>Proyectos personales</h3>
+				<div class="indicadores">
+                </div>
+			</div>
+
+			<div class="contenedor-principal">
+				<button role="button" id="flecha-izquierda" class="flecha-izquierda">&#60;</button>
+
+				<div class="contenedor-carousel">
+					<div class="carousel">
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/OAcq4JhPZLA?si=DjKSDIQwHNYXpfgl">
+                                <img src="assets/img/caratulas/bagaman.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/vFovATLSG34?si=dXZyKgWpASS0ekTn">
+                                <img src="assets/img/caratulas/rumbo.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/BgWt8tIWZ-o?si=6KLFu1TGRCSZzhJl">
+                                <img src="assets/img/caratulas/gota.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/tmOIn7r16Ao?si=Pu8CsY8haYpoMWci">
+                                <img src="assets/img/caratulas/colombia_verde.jpg" alt=""></a>
+						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/XHUcC_UbAMU?si=EJb3O7GBVa2Oz4v1">
+                                <img src="assets/img/caratulas/miniatura mimo yt_Mesa de trabajo 1.jpg" alt=""></a>
+						</div>
+                        <div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/iubbHAMgH7c?si=G5jL1VrD0s9BXp-C">
+                                <img src="assets/img/caratulas/sin-ti.png" alt=""></a>
+						</div>
 					</div>
-             		<div class="bannervideos">
-						<img src="assets/img/coffee.jpg" alt="" class="banner">
-						<a href="https://youtube.com/playlist?list=PLFVFNiPnctTJb9ELpJq8ar_Q41m3BUmSF&si=s9B0IF-wR6Ffznff" target="_blank">
-							<div class="overlay">
-								<span class="text">Gano Excel</span>
-							</div>
-						</a>
-					</div>
-             		<div class="bannervideos">
-						<img src="assets/img/youtube.png" alt="" class="banner">
-						<a href="https://www.tiktok.com/@owen.iog" target="_blank">
-							<div class="overlay">
-								<span class="text">Owen IOG</span>
-							</div>
-						</a>
-					</div>
-          		</section>
-        </div>
+				</div>
+
+				<button role="button" id="flecha-derecha" class="flecha-derecha">&#62;</button>
+			</div>
+
+		</div>
     </main>
+
+    <div id="video-modal" class="video-modal hidden">
+        <div class="video-container">
+            <iframe id="video-iframe" width="960" height="540" src="" frameborder="0" allowfullscreen></iframe>
+            <button id="close-video">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="assets/js/videos.js"></script>
 </body>
 </html>

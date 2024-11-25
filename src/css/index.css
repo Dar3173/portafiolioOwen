@@ -51,6 +51,7 @@ body, html {
 
 .menu__item {
     list-style: none;
+    position: relative; /* Necesario para que el submenú esté posicionado correctamente */
 }
 
 .menu__link {
@@ -65,9 +66,43 @@ body, html {
 .menu__link:hover {
     text-decoration: none;
     color: var(--naranja);
-    font-size: 22px;
     transition: 0.5s;
 }
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.menu__item:hover .sub_menu {
+    display: block;
+}
+
+.submenu__item {
+    background-color: hsla(17, 83%, 54%, 0.772);
+    margin-bottom: 5px;
+    margin-right: 6em;
+    padding: 10px;
+    text-align: center;
+}
+
+.submenu__link {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: var(--parrafos);
+}
+
+.submenu__item:hover, .submenu__link:hover {
+    background-color: var(--naranja);
+    color: var(--negro-gris);
+}
+
 
 
 .container_texto {
@@ -101,6 +136,8 @@ body, html {
 }
 
 .container_link {
+    display: flex;
+    justify-content: space-between;
     margin-top: 45px;
 }
 
@@ -114,6 +151,8 @@ body, html {
     font-weight: bold;
     font-family: var(--parrafos);
 	animation: resize 2s infinite;
+    margin: 0 20px;
+
 }
 
 .texto_link:hover {
