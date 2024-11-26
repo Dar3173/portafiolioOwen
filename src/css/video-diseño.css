@@ -205,19 +205,6 @@ a{
 	font-size: 25px;
 }
 
-.contenedor-titulo-controles .indicadores button {
-	background: #fff;
-	height: 3px;
-	width: 10px;
-	cursor: pointer;
-	border: none;
-	margin-right: 2px;
-}
-
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
-	background: red;
-}
 
 
 /* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
@@ -330,5 +317,100 @@ a{
     cursor: pointer;
     font-family: var(--titulos);
     font-weight: bolder;
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .container_menu {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu__lista {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu__link {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .text--informativo h1 {
+        font-size: 28px;
+    }
+
+    .text--informativo p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .text--informativo button {
+        font-size: 16px;
+        padding: 0.4em 1em;
+    }
+
+    .peliculas-recomendadas {
+        margin: 10px 20px;
+    }
+
+    .contenedor-principal .carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .pelicula {
+        flex: 0 0 80%;
+        margin-right: 10px;
+    }
+
+    .video-iframe {
+        width: 360px;
+        height: 202px;
+    }
+
+    #close-video {
+        top: 0;
+        right: 25px;
+    }
+}
+
+/* Ajustes para pantallas medianas (tabletas) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .menu__link {
+        font-size: 18px;
+    }
+
+    .text--informativo h1 {
+        font-size: 32px;
+    }
+
+    .text--informativo p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .text--informativo button {
+        font-size: 18px;
+        padding: 0.5em 1.2em;
+    }
+
+    .contenedor-principal .carousel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .pelicula {
+        margin-right: 0;
+    }
 }
 

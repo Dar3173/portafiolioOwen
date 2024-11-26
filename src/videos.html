@@ -13,9 +13,9 @@
 </head>
 <body>
     <aside class="background--banner">
-        <video muted autoplay loop poster="Multimedia/background-image.webp">
+        <video class="video" muted autoplay loop>
             <source src="assets/video-01.mp4" type="video/mp4">
-            <img src="Multimedia/background-image.webp" alt="Imagen background">
+            <img src="assets/img/caratulas/fondo web mobile.jpg" alt="Imagen background para celular">
         </video>
         <div class="banner">
             <div class="container_menu">
@@ -43,7 +43,7 @@
                 <div class="text--informativo">
                     <h1>Videos</h1>
                     <p>Cada video es único, y mi objetivo es comunicar un mensaje claro y efectivo. Trabajo desde la preproducción hasta la postproducción, utilizando cámaras réflex como la Nikon D5300 y Canon T7i, y programas como Premiere, After Effects, DaVinci Resolve, Photoshop y Audition, para entregar un producto final de alta calidad.</p>
-                    <button>⏵Proyecto OwenIOG</button>
+                    <a href="https://www.tiktok.com/@owen.iog?is_from_webapp=1&sender_device=pc" target="_blank"><button>⏵Proyecto OwenIOG</button></a>
                 </div>
             </div>
         </div>
@@ -52,8 +52,6 @@
         <div class="peliculas-recomendadas contenedor">
 			<div class="contenedor-titulo-controles">
 				<h3>Gano Excel</h3>
-				<div class="indicadores">
-                </div>
 			</div>
 
 			<div class="contenedor-principal">
@@ -174,6 +172,10 @@
 							<a href="#" data-video="https://www.youtube.com/embed/gjEpjbK-pWE?si=KXIg0p0L9MH2Gw-S">
                                 <img src="assets/img/caratulas/opener zona cunmedia.jpg" alt=""></a>
 						</div>
+						<div class="pelicula">
+							<a href="#" data-video="https://www.youtube.com/embed/1T3JH5zhNoA?si=yLDkAXfRffAvziRp">
+                                <img src="assets/img/caratulas/grados.jpg" alt=""></a>
+						</div>
 					</div>
 				</div>
 
@@ -227,7 +229,7 @@
 
     <div id="video-modal" class="video-modal hidden">
         <div class="video-container">
-            <iframe id="video-iframe" width="960" height="540" src="" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video-iframe" class="video-iframe" width="960" height="540" src="" frameborder="0" allowfullscreen></iframe>
             <button id="close-video">Cerrar</button>
         </div>
     </div>
