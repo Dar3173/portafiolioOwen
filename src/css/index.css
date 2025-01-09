@@ -344,14 +344,6 @@ body, html {
 
 @media screen and (max-width: 768px) {
 
-    .container_menu {
-        width: 100%;
-    }
-
-    .menu {
-        width: 100%;
-        align-items: center;
-    }
 
     .menu__lista {
         display: flex;

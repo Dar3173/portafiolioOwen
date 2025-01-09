@@ -136,12 +136,6 @@ a{
 }
 
 
-.container_videos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 
 
 /* imagotipo */
@@ -385,14 +379,7 @@ a{
 
 /* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
-    .container_menu {
-        width: 100%;
-    }
 
-    .menu {
-        width: 100%;
-        align-items: center;
-    }
 
     .menu__lista {
         display: flex;
