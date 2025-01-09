@@ -196,6 +196,7 @@ a{
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
+    margin-top: 3rem;
 }
 
 .contenedor-titulo-controles h3 {
@@ -216,6 +217,7 @@ a{
 	display: flex;
 	align-items: center;
 	position: relative;
+    margin-bottom: 5rem;
 }
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda,
@@ -261,7 +263,7 @@ a{
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
-	min-width: 20%;
+	min-width: 30%;
 	transition: .3s ease all;
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
     margin-right: 5px;
@@ -319,6 +321,68 @@ a{
     font-weight: bolder;
 }
 
+/*estilo footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    background: #111111;
+    min-height: 100px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-footer {
+    max-width: 300px;
+    margin: 0 5rem;
+}
+
+.logo-footer img {
+    width: 200px;
+}
+
+.redes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes h2 {
+    font-family: var(--titulos);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.icon {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+
 /* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
     .container_menu {
@@ -341,6 +405,14 @@ a{
         margin-left: 1rem;
         font-size: 18px;
         text-align: center;
+    }
+
+    .background--banner {
+        background: url(/src/assets/img/caratulas/fondo\ web\ mobile.jpg) no-repeat center/cover;
+    }
+
+    .video {
+        display: none;
     }
 
     .text--informativo h1 {
@@ -381,6 +453,24 @@ a{
         top: 0;
         right: 25px;
     }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-footer {
+        margin-bottom: 2rem;
+    }
+
+    .redes h2 {
+        font-size: 17px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
 }
 
 /* Ajustes para pantallas medianas (tabletas) */
@@ -411,6 +501,24 @@ a{
 
     .pelicula {
         margin-right: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-footer {
+        margin-bottom: 2rem;
+    }
+
+    .redes h2 {
+        font-size: 17px;
+    }
+
+    .icon {
+        margin: 10px;
     }
 }
 

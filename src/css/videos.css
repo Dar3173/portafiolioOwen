@@ -153,8 +153,71 @@ body, html{
 	font-weight: bold;
 }
 
+/*estilo footer*/
+.footer {
+    position: relative;
+    width: 100%;
+    background: #111111;
+    min-height: 100px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
 
-@media screen and (max-width:600px){
+.logo-footer {
+    max-width: 300px;
+    margin: 0 5rem;
+}
+
+.logo-footer img {
+    width: 200px;
+}
+
+.redes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes h2 {
+    font-family: var(--titulos);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 25px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem {
+    list-style: none;
+}
+
+.icon {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
+@media screen and (max-width:768px){
 	.container_iconos{
 		flex-wrap: wrap;
 	}
@@ -167,5 +230,23 @@ body, html{
 		font-size: 75px;
 		animation: none;
 	}
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-footer {
+        margin-bottom: 2rem;
+    }
+
+    .redes h2 {
+        font-size: 17px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
 }
 
